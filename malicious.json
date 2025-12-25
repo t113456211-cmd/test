@@ -8,7 +8,7 @@
   "paths": {
     "/test": {
       "get": {
-        "summary": "Test summary",
+        "summary": "Normal summary",
         "responses": {
           "200": {
             "description": "OK"
